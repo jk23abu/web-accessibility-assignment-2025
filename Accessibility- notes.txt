@@ -1,0 +1,17 @@
+Accessibility notes – University Enrolment Portal
+
+Initial WAVE test on the original enrolment.html
+
+Tool: WAVE browser extension
+Date: 3 December 2025
+
+Results:
+- Errors: 0
+- Contrast errors: 1 (very low contrast)
+- Alerts: 5
+  - Link to PDF document
+  - Noscript element
+  - 2 × redundant title text
+  - Layout table
+
+These results are from the unmodified version of enrolment.html before making any improvements.
