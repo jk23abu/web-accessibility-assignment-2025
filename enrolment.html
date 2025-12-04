@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +14,8 @@
             --gray-500: #6b7280;
             --gray-600: #4b5563;
             --gray-800: #1f2937;
-            --red-500: #ef4444;
-            --red-600: #dc2626;
+            --red-500: #7f1d1d;
+            --red-600: #4c0f0f;
             --green-600: #059669;
         }
 
@@ -233,7 +233,7 @@
 
         .icon-btn-danger {
             background-color: var(--red-500);
-            color: white;
+            color: black;
             padding: 0.75rem;
             margin-left: 1rem;
             border-radius: 0.5rem;
@@ -377,7 +377,9 @@
     <header class="header-primary">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 header-content">
             <div style="display: flex; align-items: center;">
-                <img src="https://placehold.co/50x50/1e3a8a/ffffff?text=U" style="width: 30px; height: 30px; margin-right: 1rem;">
+                <img src="https://placehold.co/50x50/1e3a8a/ffffff?text=U"
+                     alt="University Logo" 
+                     style="width: 30px; height: 30px; margin-right: 1rem;">
                 <h2 class="header-title">University Enrollment Portal</h2>
             </div>
             
@@ -415,15 +417,19 @@
                                 </div>
 
                                 <div class="flex-col">
-                                    <input type="email" id="email-address" class="input-field" placeholder="Email Address (required)">
+                                    <label for="email-address" class="input-label">Email Address</label>
+                                    <input type="email"id="email-address"class="input-field"placeholder="Email Address (required)">
                                 </div>
                                 
                                 <div class="checkbox-group pt-4 items-start">
-                                    <input type="checkbox" name="privacy-check" class="checkbox-input" style="margin-top: 0.25rem;"> 
-                                    <span>I agree to the 
+                                    <input type="checkbox" id="privacy-check" name="privacy-check" class="checkbox-input" style="margin-top: 0.25rem;"> 
+                                    <label for="privacy-check">
+                                        I agree to the 
                                         <a href="/privacy" style="color: var(--primary-blue); font-weight: 700;" class="underline">Click Here to Read More</a> 
-                                    on the privacy policy.</span>
+                                        on the privacy policy.
+                                    </label>
                                 </div>
+
                                 
                                 <img src="https://placehold.co/200x5/dddddd/dddddd" style="display: block; margin: 10px auto; width: 80%;" title="Divider line">
 
@@ -440,9 +446,9 @@
                                         <label for="comp-sci">Computer Science</label>
                                     </div>
                                     <div class="checkbox-group">
-                                        <input type="checkbox" class="checkbox-input">
-                                        <span>Mechanical Engineering</span>
-                                    </div>
+                                         <input type="checkbox" id="mech-eng" class="checkbox-input">
+                                         <label for="mech-eng">Mechanical Engineering</label>
+                                     </div>
                                     <div class="checkbox-group">
                                         <input type="checkbox" id="history" class="checkbox-input">
                                         <label for="history">Ancient History</label>
@@ -469,12 +475,10 @@
                                         <label for="financial-aid" style="flex: 1;">I have completed the FAFSA or equivalent application.</label>
                                     </div>
 
-                                    <div class="checkbox-group items-start">
-                                        <input type="radio" name="income" id="income-low" value="low" class="radio-input" style="margin-top: 0.25rem;">
-                                        <span>Household income is below the regional median.</span>
-                                    </div>
-                                    
-                                </div>
+                                    <<div class="checkbox-group items-start">
+                                          <input type="radio" name="income" id="income-low" value="low" class="radio-input" style="margin-top: 0.25rem;">
+                                          <label for="income-low" style="flex: 1;">Household income is below the regional median.</label>
+</div>
                                 
                                 <h4 style="font-size: 1.25rem; font-weight: 500; margin-bottom: 0.75rem; margin-top: 1.5rem;">Academic History</h4>
 
@@ -555,7 +559,7 @@
                             <h3 class="card-title">Campus Life</h3>
                             <div class="flex-col items-center">
                                 <a href="#library-info" style="color: var(--primary-blue); font-weight: 700;" class="underline">
-                                    <img src="https://placehold.co/300x200/ef4444/ffffff?text=Library" alt="photo" style="border-radius: 0.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); margin-bottom: 0.25rem;">
+                                    <img src="https://placehold.co/300x200/b91c1c/ffffff?text=Library" alt="photo" style="border-radius: 0.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); margin-bottom: 0.25rem;">
                                     Library Image
                                 </a>
                                 
