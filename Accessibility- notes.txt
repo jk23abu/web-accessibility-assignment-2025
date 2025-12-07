@@ -1,17 +1,44 @@
-Accessibility notes – University Enrolment Portal
-
-Initial WAVE test on the original enrolment.html
-
-Tool: WAVE browser extension
-Date: 3 December 2025
-
-Results:
-- Errors: 0
-- Contrast errors: 1 (very low contrast)
-- Alerts: 5
-  - Link to PDF document
-  - Noscript element
-  - 2 × redundant title text
-  - Layout table
-
-These results are from the unmodified version of enrolment.html before making any improvements.
+ACCESSIBILITY NOTES 
+Errors (6 Total)
+1. Missing alternative text
+- One image/icon does not have an alt attribute.
+- Screen readers cannot interpret it.
+- Needs: alt="description" or alt="" if decorative.
+2. Missing form label (4 instances)
+- Several form inputs do not have proper connections.
+- Affects: name field info icon, verification info, email field info icon, privacy checkbox.
+- Each input needs a clear programmatic label.
+3. Language missing or invalid
+- The page lang="" attribute is missing or incorrect.
+- Needs: .
+Contrast Errors (2 Total)
+1. Very low contrast
+- Two elements have poor contrast between text/icon and background.
+- Likely small icons or close buttons.
+- Needs contrast ratio ≥ 3:1 for UI icons and ≥ 4.5:1 for text.
+Alerts (20 Total)
+1. Select missing label
+- A select element lacks an accessible label.
+2. Suspicious alternative text
+- Some alt text is unclear or decorative but not marked as decorative.
+3. Image with title only
+- An image uses title="" instead of alt="".
+4. Orphaned form label
+- A label is present but not associated with an input.
+5. Missing first-level heading
+- Page skips and starts with or .
+6. Skipped heading levels
+- Heading hierarchy jumps incorrectly.
+7. Broken same-page link
+- One or more anchor links reference IDs that do not exist.
+8. Suspicious link text
+- Link text like "Click Here" or "Read More" is not descriptive.
+Summary of Fixes Needed
+- Add proper alt text.
+- Add missing form labels.
+- Fix .
+- Improve contrast on flagged icons/buttons.
+- Add label for select field.
+- Replace vague link text.
+- Fix heading order.
+- Repair broken anchor links.
