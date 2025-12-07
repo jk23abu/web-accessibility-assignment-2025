@@ -1,4 +1,5 @@
 ACCESSIBILITY NOTES 
+
 Errors (6 Total)
 1. Missing alternative text
 - One image/icon does not have an alt attribute.
@@ -11,11 +12,13 @@ Errors (6 Total)
 3. Language missing or invalid
 - The page lang="" attribute is missing or incorrect.
 - Needs: .
+
 Contrast Errors (2 Total)
 1. Very low contrast
 - Two elements have poor contrast between text/icon and background.
 - Likely small icons or close buttons.
 - Needs contrast ratio ≥ 3:1 for UI icons and ≥ 4.5:1 for text.
+
 Alerts (20 Total)
 1. Select missing label
 - A select element lacks an accessible label.
@@ -33,6 +36,7 @@ Alerts (20 Total)
 - One or more anchor links reference IDs that do not exist.
 8. Suspicious link text
 - Link text like "Click Here" or "Read More" is not descriptive.
+
 Summary of Fixes Needed
 - Add proper alt text.
 - Add missing form labels.
@@ -42,3 +46,4 @@ Summary of Fixes Needed
 - Replace vague link text.
 - Fix heading order.
 - Repair broken anchor links.
+
